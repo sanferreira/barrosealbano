@@ -44,3 +44,7 @@ next-env.d.ts
 **/__pycache__/
 *.py[cod]
 
+
+# agent tooling
+AGENTS.md
+CLAUDE.md
