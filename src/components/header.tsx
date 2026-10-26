@@ -27,13 +27,13 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="bg-blue text-[11px] text-navy/70">
+      <div className="bg-blue text-[11px] font-medium text-navy/85">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1 px-4 py-1.5 sm:justify-between md:px-6">
           <a
             href={site.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium hover:text-navy cursor-pointer"
+            className="font-semibold hover:text-navy cursor-pointer"
           >
             WhatsApp: {site.phoneDisplay}
           </a>
@@ -76,7 +76,7 @@ export function Header() {
               <Link
                 key={`${link.href}-${link.label}`}
                 href={link.href}
-                className="text-[13px] text-navy/70 transition-colors duration-200 hover:text-navy cursor-pointer"
+                className="text-[13px] font-semibold text-navy transition-colors duration-200 hover:text-gold-dark cursor-pointer"
               >
                 {link.label}
               </Link>
@@ -119,7 +119,7 @@ export function Header() {
                 key={`${link.href}-${link.label}-m`}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm text-navy hover:bg-blue cursor-pointer"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-navy hover:bg-blue cursor-pointer"
               >
                 {link.label}
               </Link>
